@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1df7871-a6ba-4214-bb30-d005a85f17e0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fwZh2bQl7n9r0lU8rW8zrSqKPz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javatechie.spring.ajax.api.SpringAjaxApplication" />
+      <module name="spring-ajax" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringAjaxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-ajax" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.javatechie.spring.ajax.api.SpringAjaxApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Spring Boot.SpringAjaxApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1df7871-a6ba-4214-bb30-d005a85f17e0" name="Default Changelist" comment="" />
+      <created>1597131230891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597131230891</updated>
+      <workItem from="1597131236240" duration="10212000" />
+      <workItem from="1597226713691" duration="38000" />
+      <workItem from="1597577963457" duration="1141000" />
+      <workItem from="1598367009627" duration="542000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="255" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597131395615">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="255" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.797@0.23.1440.797" timestamp="1597131395615" />
+    <state x="504" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1597140147040">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="504" y="134" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797@0.23.1440.797" timestamp="1597140147040" />
+    <state x="528" y="215" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597131385680">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="528" y="215" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.797@0.23.1440.797" timestamp="1597131385680" />
+    <state width="1298" height="211" key="GridCell.Tab.0.bottom" timestamp="1597590540173">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1298" height="211" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1597590540173" />
+    <state width="1298" height="211" key="GridCell.Tab.0.center" timestamp="1597590540172">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1298" height="211" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1597590540172" />
+    <state width="1298" height="211" key="GridCell.Tab.0.left" timestamp="1597590540172">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1298" height="211" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1597590540172" />
+    <state width="1298" height="211" key="GridCell.Tab.0.right" timestamp="1597590540173">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1298" height="211" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1597590540173" />
+    <state x="279" y="23" key="SettingsEditor" timestamp="1597131425896">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="279" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1597131425896" />
+  </component>
+</project>
