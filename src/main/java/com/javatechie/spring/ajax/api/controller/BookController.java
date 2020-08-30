@@ -42,4 +42,22 @@ public class BookController {
 		ServiceResponse<List<Book>> response = new ServiceResponse<>("success", bookStore);
 		return new ResponseEntity<Object>(response, HttpStatus.OK);
 	}
+	@PostMapping("/searchBook")
+	public ResponseEntity<Object> getBook(@RequestBody Book book) {
+		bookStore.clear();
+		bookStore.addAll(fetchBookRepository.findAll()); //vsetky knihy si pridam ako objekty do programu
+		ServiceResponse<List<Book>> response = new ServiceResponse<>("success", bookStore);
+		return new ResponseEntity<Object>(response, HttpStatus.OK);
+
+	/*	bookStore.clear();
+		bookStore.addAll(fetchBookRepository.findAll()); //vsetky knihy si pridam ako objekty do programu
+		for ( Book i : bookStore){
+			if (i.getAuthor()==book.getAuthor() || i.getBookName()==book.getBookName() || i.getBookId()==book.getBookId()){
+				ServiceResponse<Book> response = new ServiceResponse<>("success", i);
+				return new ResponseEntity<Object>(response, HttpStatus.OK);
+			}
+		}
+		ServiceResponse<Book> response = new ServiceResponse<>("success", book);
+		return new ResponseEntity<Object>(response, HttpStatus.OK);*/
+	}
 }

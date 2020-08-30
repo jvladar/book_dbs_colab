@@ -14,10 +14,12 @@ GET: $(document).ready(
 					url : "getBooks",
 					success : function(result) {
 						if (result.status == "success") {
+
+
+
 							$('#getResultDiv ul').empty();
 							var custList = "";
-							$.each(result.data,
-									function(i, book) {
+							$.each(result.data, function(i, book) {
 										var user = "Book Name  "
 												+ book.bookName
 												+ ", Author  = " + book.author
@@ -26,6 +28,7 @@ GET: $(document).ready(
 												user)
 									});
 							console.log("Success: ", result);
+
 						} else {
 							$("#getResultDiv").html("<strong>Error</strong>");
 							console.log("Fail: ", result);
