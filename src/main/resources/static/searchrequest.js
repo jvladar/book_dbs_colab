@@ -10,6 +10,54 @@ $(document).ready(
 
         function ajaxPost() {
 
+            // DO POST
+            $.ajax({
+                type : "POST",
+                contentType : "application/json",
+                url : "searchBook",
+                success : function(result) {
+                    if (result.status == "success") {
+
+                        $('#getResult ul').empty();
+                        var custList = "";
+                        $.each(result.data, function(i, book) {
+                            var user = "Book Name  "
+                                + book.bookName
+                                + ", Author  = " + book.author
+                                + "<br>"
+                            $('#getResult .list-group').append(
+                                user)
+                        });
+                        console.log("Success: ", result);
+
+                    } else {
+                        $("#getResult").html("<strong>Error</strong>");
+                        console.log("Fail: ", result);
+                    }
+                },
+                error : function(e) {
+                    alert("Error!")
+                    console.log("ERROR: ", e);
+                }
+            });
+
+        }
+
+    })
+
+
+/*$(document).ready(
+    function() {
+
+        // SUBMIT FORM
+        $("#bookSearchForm").submit(function(event) {
+            // Prevent the form from submitting via the browser.
+            event.preventDefault();
+            ajaxPost();
+        });
+
+        function ajaxPost() {
+
             // PREPARE FORM DATA
             var formData = {
                 bookId : $("#bookId").val(),
@@ -42,7 +90,7 @@ $(document).ready(
                         console.log("Success: ", result);
 
                     } else {
-                        $("#getResult").html("<strong>Error</strong>");
+                        $("#getResult").html("<strong>Erruor</strong>");
                         console.log("Fail: ", result);
                     }
                 },
@@ -54,4 +102,4 @@ $(document).ready(
 
         }
 
-    })
+    })*/

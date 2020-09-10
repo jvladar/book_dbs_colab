@@ -1,5 +1,7 @@
 package com.javatechie.spring.ajax.api;
 
+import com.javatechie.spring.ajax.api.controller.JpaConfig;
+import com.javatechie.spring.ajax.api.controller.SqlService;
 import com.javatechie.spring.ajax.api.dto.Book;
 import com.javatechie.spring.ajax.api.dto.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +26,6 @@ public class SpringAjaxApplication {
 			repository.save(new Book("meno_knihy","Jozef"));
 		};
 	}
+
 
 }
