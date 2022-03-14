@@ -100,8 +100,4 @@ def main():
 
     for thread in monitors + sensors:
         thread.join()
-
-
-if __name__ == '__main__':
-    main()
 ```
