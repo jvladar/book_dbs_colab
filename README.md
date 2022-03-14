@@ -1,6 +1,6 @@
 # Paralelné programovanie a distribuované systémy 2022
 
-## Cvičenie 4
+## Cvičenie 4, zadanie [Atómová elektráreň #2](https://uim.fei.stuba.sk/i-ppds/4-cvicenie-vecerajuci-filozofi-atomova-elektraren-🍽%EF%B8%8F/)
 
 ### **1. Urobte analýzu, o aké typy synchronizačných úloh (prípadne ich modifikácie či kombinácie) sa v tejto úlohe jedná.**
 
