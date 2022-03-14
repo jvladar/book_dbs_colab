@@ -1,4 +1,9 @@
-# spring-boot-ajax
+# Paralelné programovanie a distribuované systémy 2022
+
+### Urobte analýzu, o aké typy synchronizačných úloh (prípadne ich modifikácie či kombinácie) sa v tejto úlohe jedná.
+asfafaffegaegaeaaeafafa
+
+
 
 ```
 class Shared:
