@@ -2,11 +2,11 @@
 
 ## Cvičenie 4
 
-** 1. Urobte analýzu, o aké typy synchronizačných úloh (prípadne ich modifikácie či kombinácie) sa v tejto úlohe jedná. **
+**1. Urobte analýzu, o aké typy synchronizačných úloh (prípadne ich modifikácie či kombinácie) sa v tejto úlohe jedná.**
 
 V našej úlohe sa jedná o zosynchronizovanie prístupu 3 čidiel a 8 monitorov k jednému úložisku do ktorého čidlá zapisujú hodnoty a monitory ich z neho čítajú a zobrazujú. Musíme vykonať správne synchronizačné úkony aby sa kód vykonával paralelne a aby monitory mali na úvod všetky hodnoty z čidiel, aby mali čo prečítať a z toho dôvodu musíme zabezpečiť aby nám v prvej iterácií najprv čidla zapisovali a až potom monitory mohli čítať z úložiska.
 
-** 2. Presne namapujte vami zvolené synchronizačné úlohy (primitívy) na jednotlivé časti zadania. **
+**2. Presne namapujte vami zvolené synchronizačné úlohy (primitívy) na jednotlivé časti zadania.**
 
 Ako som už spomenul vyššie, musíme sa zamerať na prístup do spoločnej pamäte a správne a plynule čítanie a zapisovanie do nej. 
 Dôležité pravidlá musíme dodržať už hneď pri prvej iterácií kde je dôležité aby začali do úložiska zapisovať najprv všetky čidlá a až keď zapíšu všetky hodnoty tak môžu začať monitory čítať. Toto správanie sme ošetrili vyvolaním wait na Evente na monitoroch. Čidlá vykonajú aktualizáciu ktorá trvá od 50 do 60ms a môžu začať prechádzať cez turniket a následne zamknúť spoločné úložisko s tým že dalšie čidla majú do neho prístup, toto úložisko zamkneme pomocou prepínaču. Máme 3 druhy čidiel a jedno z nich na dlhší čas aktualizácie ako zvyšné dve, 20 až 25ms zatiaľ čo zvyšné dve len 10 až 20ms. Následne prvé čidlo vyvolá signál na Event pre monitory no monitory musia ste čakať na prístup do úložiska pretože úložisko nám v prepínači odomkne až posleédn čidlo. Monitory môžu teraz bežpečne prečítať údaje z úložiska. Ďalej si môžeme všimnúť že čidlá aj monitory majú náhodnu dobu aktualizácie a to je dôvod prečo neskôr môžeme vidieť že nebude zapisaovaíť aj čítať 8 monitorov a 3 čidlá naraz, támo n ale nevadí.
